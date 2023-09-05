@@ -5,7 +5,7 @@ from facechain.inference import GenPortrait
 import cv2
 from modelscope import snapshot_download
 from facechain.constants import neg_prompt, pos_prompt_with_cloth, pos_prompt_with_style, styles, cloth_prompt
-
+snapshot_download('some-model-id')
 
 def generate_pos_prompt(style_model, prompt_cloth):
     if style_model == styles[0]['name'] or style_model is None:
